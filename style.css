@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  width: 80%;
+  margin: 15vh auto 0;
+  font-family: "oswald";
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 44px;
+}
+
+.game {
+  display: flex;
+  margin-bottom: 3vh;
+}
+
+.game div {
+  height: 40vh;
+  flex-grow: 1;
+  margin: 10px;
+  border: 3px solid gray;
+  background-position: center;
+  background-size: cover;
+}
+
+.play {
+  text-align: center;
+}
+
+.play input {
+  margin-bottom: 2vh;
+  height: 90px;
+  width: 400px;
+  font-size: 40px;
+  padding: 20px;
+  border: solid 3px gray;
+  text-align: center;
+}
+
+.play button {
+  width: 40%;
+  height: 90px;
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 6px;
+  color: white;
+  min-width: 256px;
+  transition: 0.8s;
+}
+
+.panel {
+  text-align: left;
+  margin-top: 5vh;
+}
+
+.wallet {
+  font-weight: bold;
+}
+
+.score {
+  margin-top: 3vh;
+}
+
+.play button:hover {
+  background-color: #999;
+  color: black;
+}
+.score span {
+  font-weight: bold;
+}
+
+section.instruction {
+  position: absolute;
+  width: 30vw;
+  right: 0px;
+  top: 0px;
+  border: gray solid 2px;
+  font-family: "oswald";
+}
+
+.instruction h1 {
+  font-size: 24px;
+}
+
+.instruction ul {
+  list-style: none;
+}

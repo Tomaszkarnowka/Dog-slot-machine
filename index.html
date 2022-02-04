@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Saira+Condensed:wght@300;400;700&family=Saira:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jednoręki bandyta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Jednoręki bandyta</h1>
+
+      <section class="game">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
+
+      <section class="play">
+        <input type="number" placeholder="Podaj stawkę" id="bid" />
+        <button id="start">Zakręć!</button>
+      </section>
+
+      <section class="panel">
+        TWOJE SRODKI PRZED KOLEJNĄ GRĄ TO: <span class="wallet"></span>
+      </section>
+
+      <section class="score">
+        <span class="result"></span> Za tobą <span class="number"></span> gier,
+        w tym <span class="win"></span> wygranych i
+        <span class="loss"></span> przegranych
+      </section>
+    </div>
+    <section class="instruction">
+      <h1>Instrukcja</h1>
+      <ul>
+        <li>
+          1.Należy podać stawkę o która będzie się grało (wiekszą lub równa 1)
+        </li>
+        <li>2.Po podaniu stawki wciskamy przycisk "ZAKRĘĆ"</li>
+        <li>
+          3.Trzy takie same pola oraz trzy różne dają zwycięstwo(podana stawka
+          jest zwiekszana trzykrotnie)
+        </li>
+        <li>
+          4.Pozostałe możliwości powodują przegraną i odjęcie stawki od
+          dostepnych środków
+        </li>
+      </ul>
+    </section>
+
+    <script src="Wallet.js"></script>
+    <script src="Statistcs.js"></script>
+    <script src="Draw.js"></script>
+    <script src="Result.js"></script>
+    <script src="Game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
